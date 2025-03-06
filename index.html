@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c4254e8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="main logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home </a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>ML Engineer</p>
+          <h1>
+            Hi, I'm <span>OJiaku</span><br />
+            Samuel from Nigeria
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="about pic.png" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello! I'm Ojiaku Samuel, a passionate Machine Learning Engineer
+              dedicated to building innovative solutions that drive business
+              value. With a year of experience in machine learning and software
+              development, I've developed a strong expertise in designing,
+              training, and deploying scalable ML models. My expertise spans:
+              <br />
+              <li>
+                Machine learning frameworks: TensorFlow, PyTorch, Scikit-learn
+                <br />
+              </li>
+              <li>Programming languages: Python, Java, C++ <br /></li>
+              <li>Cloud platforms: AWS, GCP, Azure <br /></li>
+
+              I'm driven by a curiosity to explore new ideas and a passion to
+              apply ML to real-world problems. My goal is to deliver
+              high-quality solutions that exceed expectations. When I'm not
+              working on ML projects, you can find me Cooking, Studying or
+              playing Music. I'm always eager to collaborate and learn from
+              others in the ML community.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
+              <p class="tab-links" onclick="opentab('experience')"> Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>ML Engineer</span><br />Machine Learning</li>
+                <li><span>Web Development</span><br />Web app Development</li>
+                <li>
+                  <span>App Development</span><br />Building Android/ios apps
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 -2023</span><br />Visual Basic Training at MIIT
+                  Institute
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Internship at Innovation
+                  Growth Hub
+                </li>
+                <li>
+                  <span>2013 - Current</span><br />Staff at Vemco Industrial
+                  Company Limited
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024</span><br />Web Development Training at IG-HUB
+                </li>
+                <li><span>2025</span><br />B.SC from Tansian University.</li>
+                <li><span>2021</span><br />MBA from MIIT Institute</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------services----------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Machine Learning</h2>
+            <p>
+              Machine learning is revolutionizing the way businessex operate.
+              with my expertise, you can expect improved accuracy, incresed
+              efficiency, and enhanced customer experience. Lets harness the
+              potential of machine learning together.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Web Design</h2>
+            <p>
+              A well-designed website is crucial for establishing a strong
+              online presence. My web design services will help you stand out
+              from the comopetition, drive more traffic, and convert visitors
+              into customers. with my expertise, you'll enjoy a professional
+              website that truly represents your brand.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              Unlock the full potential of mobile apps for your business. As a
+              skilled app developer, I design and build custom mobile
+              applications that deliver seamless user experience, drive
+              engagement, and boost conversions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="work-1.png" />
+                <div class="layer">
+                  <h3>Social Media App</h3>
+                  <p>
+                    The app connects you to the talente people around the world.
+                    Download it from play store.
+                  </p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+               <div class="work">
+                <img src="work-2.png" />
+                <div class="layer">
+                  <h3>Music App</h3>
+                  <p>
+                    The app connects you to the talente people around the world.
+                    Download it from play store.
+                  </p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="work-3.png" />
+                <div class="layer">
+                  <h3>Online Shopping App</h3>
+                  <p>
+                    The app connects you to the talente people around the world.
+                    Download it from play store.
+                  </p>
+                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- contact -->
+     <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fas fa-paper-plane"></i>samuelojiaku0@gmail.com</p>
+            <p><i class="fas fa-phone-square"></i>+234 8142838781</p>
+            <div class="social-icons">
+              <a href=""><i class="fab fa-facebook"></i></a>
+              <a href=""><i class="fab fa-twitter-square"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+              <a href=""><i class="fab fa-linkedin"></i></a>
+            </div>
+            <a href="./Samuel CV.pdf" class="btn btn2">Download CV </a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="text" name="Emal" placeholder="Your Email" required>
+              <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg">Hello</span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>copyright &copy; Samuel. made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
+      </div>
+     </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks){
+          tablink.classlist.remove("active-link");
+        }
+
+        for (tabcontent of tabcontents){
+          tabcontent.classlist.remove("active-tab");
+        }
+        event.currentTarget.classlist.add("active-link");
+        document.getElementByid(tabname).classlist.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+       function closemenu(){
+        sidemenu.style.right = "-200px";
+       }
+
+    </script>
+
+  <script>
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+  sidemenu.style.right = "0";
+}
+function openmenu() {
+  sidemenu.style.right = "-200";
+}
+
+
+  </script>    
+
+
+  </body>
+</html>
