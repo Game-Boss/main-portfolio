@@ -1,291 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal portfolio website</title>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/c4254e8.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-
-  <body>
-    <!-- Header -->
-
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img src="main logo.png" class="logo" />
-          <ul id="sidemenu">
-            <li><a href="#header">Home </a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fas fa-times" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-bars" onclick="openmenu()"></i>
-        </nav>
-
-        <div class="header-text">
-          <p>ML Engineer</p>
-          <h1>
-            Hi, I'm <span>OJiaku</span><br />
-            Samuel from Nigeria
-          </h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ojiaku Samuel - ML Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">OJiaku.</a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-      </div>
-    </div>
+    </nav>
 
-    <!-- About -->
-
-    <div id="about">
-      <div class="container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="about pic.png" />
-          </div>
-
-          <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
-              Hello! I'm Ojiaku Samuel, a passionate Machine Learning Engineer
-              dedicated to building innovative solutions that drive business
-              value. With a year of experience in machine learning and software
-              development, I've developed a strong expertise in designing,
-              training, and deploying scalable ML models. My expertise spans:
-              <br />
-              <li>
-                Machine learning frameworks: TensorFlow, PyTorch, Scikit-learn
-                <br />
-              </li>
-              <li>Programming languages: Python, Java, C++ <br /></li>
-              <li>Cloud platforms: AWS, GCP, Azure <br /></li>
-
-              I'm driven by a curiosity to explore new ideas and a passion to
-              apply ML to real-world problems. My goal is to deliver
-              high-quality solutions that exceed expectations. When I'm not
-              working on ML projects, you can find me Cooking, Studying or
-              playing Music. I'm always eager to collaborate and learn from
-              others in the ML community.
-            </p>
-
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('Skills')"> Skills</p>
-              <p class="tab-links" onclick="opentab('experience')"> Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li><span>ML Engineer</span><br />Machine Learning</li>
-                <li><span>Web Development</span><br />Web app Development</li>
-                <li>
-                  <span>App Development</span><br />Building Android/ios apps
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>2021 -2023</span><br />Visual Basic Training at MIIT
-                  Institute
-                </li>
-                <li>
-                  <span>2024 - Current</span><br />Internship at Innovation
-                  Growth Hub
-                </li>
-                <li>
-                  <span>2013 - Current</span><br />Staff at Vemco Industrial
-                  Company Limited
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>2024</span><br />Web Development Training at IG-HUB
-                </li>
-                <li><span>2025</span><br />B.SC from Tansian University.</li>
-                <li><span>2021</span><br />MBA from MIIT Institute</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-------------services----------->
-
-    <div id="services">
-      <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-          <div>
-            <i class="fas fa-code"></i>
-            <h2>Machine Learning</h2>
-            <p>
-              Machine learning is revolutionizing the way businessex operate.
-              with my expertise, you can expect improved accuracy, incresed
-              efficiency, and enhanced customer experience. Lets harness the
-              potential of machine learning together.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-
-          <div>
-            <i class="fas fa-crop-alt"></i>
-            <h2>Web Design</h2>
-            <p>
-              A well-designed website is crucial for establishing a strong
-              online presence. My web design services will help you stand out
-              from the comopetition, drive more traffic, and convert visitors
-              into customers. with my expertise, you'll enjoy a professional
-              website that truly represents your brand.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-
-          <div>
-            <i class="fab fa-app-store"></i>
-            <h2>App Design</h2>
-            <p>
-              Unlock the full potential of mobile apps for your business. As a
-              skilled app developer, I design and build custom mobile
-              applications that deliver seamless user experience, drive
-              engagement, and boost conversions.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- portfolio -->
-    <div id="portfolio">
-      <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-              <div class="work">
-                <img src="work-1.png" />
-                <div class="layer">
-                  <h3>Social Media App</h3>
-                  <p>
-                    The app connects you to the talente people around the world.
-                    Download it from play store.
-                  </p>
-                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-fade-up">Hi, I'm <span class="highlight">OJiaku Samuel</span></h1>
+                <p class="animate-fade-up">Machine Learning Engineer & Software Developer</p>
+                <div class="hero-cta animate-fade-up">
+                    <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
-              </div>
-               <div class="work">
-                <img src="work-2.png" />
-                <div class="layer">
-                  <h3>Music App</h3>
-                  <p>
-                    The app connects you to the talente people around the world.
-                    Download it from play store.
-                  </p>
-                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-              </div>
-              <div class="work">
-                <img src="work-3.png" />
-                <div class="layer">
-                  <h3>Online Shopping App</h3>
-                  <p>
-                    The app connects you to the talente people around the world.
-                    Download it from play store.
-                  </p>
-                  <a href="#"><i class="fas fa-external-link-alt"></i></a>
-                </div>
-              </div>
             </div>
-            <a href="#" class="btn">See More</a>
-          </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- contact -->
-     <div id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="contact-left">
-            <h1 class="sub-title">Contact me</h1>
-            <p><i class="fas fa-paper-plane"></i>samuelojiaku0@gmail.com</p>
-            <p><i class="fas fa-phone-square"></i>+234 8142838781</p>
-            <div class="social-icons">
-              <a href=""><i class="fab fa-facebook"></i></a>
-              <a href=""><i class="fab fa-twitter-square"></i></a>
-              <a href=""><i class="fab fa-instagram"></i></a>
-              <a href=""><i class="fab fa-linkedin"></i></a>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="about pic.png" alt="Ojiaku Samuel" class="animate-fade-in">
+                </div>
+                <div class="about-text">
+                    <p>Hello! I'm Ojiaku Samuel, a passionate Machine Learning Engineer dedicated to building innovative solutions that drive business value. With expertise in ML frameworks and software development, I create scalable solutions that make a difference.</p>
+                    
+                    <div class="skills">
+                        <h3>Technical Skills</h3>
+                        <div class="skill-grid">
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <h4>Machine Learning</h4>
+                                <p>TensorFlow, PyTorch, Scikit-learn</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <h4>Programming</h4>
+                                <p>Python, Java, C++</p>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cloud"></i>
+                                <h4>Cloud Platforms</h4>
+                                <p>AWS, GCP, Azure</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a href="./Samuel CV.pdf" class="btn btn2">Download CV </a>
-          </div>
-          <div class="contact-right">
-            <form>
-              <input type="text" name="Name" placeholder="Your Name" required>
-              <input type="text" name="Emal" placeholder="Your Email" required>
-              <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg">Hello</span>
-          </div>
         </div>
-      </div>
-      <div class="copyright">
-        <p>copyright &copy; Samuel. made with <i class="fas fa-heart"></i> by Easy Tutorials</p>
-      </div>
-     </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">My Services</h2>
+            <div class="services-grid">
+                <div class="service-card animate-fade-up">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Developing and deploying custom ML solutions to solve complex business problems with high accuracy and efficiency.</p>
+                </div>
+                <div class="service-card animate-fade-up">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating responsive and modern web applications using the latest technologies and best practices.</p>
+                </div>
+                <div class="service-card animate-fade-up">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Development</h3>
+                    <p>Building native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="work-1.png" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Analytics</h3>
+                        <p>ML-powered social media analytics platform</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="work-2.png" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Music Recommendation</h3>
+                        <p>AI-driven music recommendation system</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="work-3.png" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Smart shopping platform with ML features</p>
+                        <a href="#" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>email@example.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <p>+234 XXX XXX XXXX</p>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ojiaku Samuel. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
+        // Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
 
-      function opentab(tabname) {
-        for (tablink of tablinks){
-          tablink.classList.remove("active-link");
-        }
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-        for (tabcontent of tabcontents){
-          tabcontent.classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      } 
+        // Intersection Observer for animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-fade-up, .animate-fade-in').forEach((el) => observer.observe(el));
     </script>
-
-    <script>
-
-      var sidemenu = document.getElementById("sidemenu");
-
-      function openmenu(){
-        sidemenu.style.right = "0";
-      }
-       function closemenu(){
-        sidemenu.style.right = "-200px";
-       }
-
-    </script>
-
-  <script>
-
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-  sidemenu.style.right = "0";
-}
-function openmenu() {
-  sidemenu.style.right = "-200";
-}
-
-
-  </script>    
-
-
-  </body>
+</body>
 </html>
